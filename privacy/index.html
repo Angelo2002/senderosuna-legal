@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SenderosUNA — Política de privacidad</title>
+  <meta name="description" content="Política de privacidad de la aplicación SenderosUNA.">
+  <style>
+    :root { --bg: #ffffff; --text: #1c2238; --dim: #4d556e; --line: #dde2ee; --accent: #243568; --note: #fff4d6; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0e1426; --text: #e8ecf7; --dim: #aab3cc; --line: #26304d; --accent: #9fb2ea; --note: #3a3218; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; color: var(--accent); }
+    h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+    p, li { color: var(--text); }
+    .meta { color: var(--dim); font-size: .9rem; margin: 0 0 24px; }
+    .lang { display: flex; gap: 12px; margin: 0 0 24px; font-size: .95rem; }
+    .lang a { color: var(--accent); }
+    .draft { background: var(--note); border-radius: 8px; padding: 12px 14px; font-size: .92rem; margin: 0 0 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+    th { color: var(--dim); font-weight: 600; }
+    .table-wrap { overflow-x: auto; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  </style>
+</head>
+<body>
+<main>
+  <!-- BORRADOR: eliminar este aviso y completar [RESPONSABLE], [CORREO] y [FECHA] cuando el cliente apruebe el texto. -->
+  <p class="draft"><strong>Borrador pendiente de aprobación.</strong> Los campos entre corchetes se completarán antes de la publicación. / <strong>Draft pending approval.</strong> Bracketed fields will be completed before release.</p>
+
+  <nav class="lang" aria-label="Idioma / Language"><a href="#es">Español</a><a href="#en">English</a></nav>
+
+  <section id="es" lang="es">
+    <h1>Política de privacidad de SenderosUNA</h1>
+    <p class="meta">Vigente desde: [FECHA] · Responsable: [RESPONSABLE] · Contacto: [CORREO]</p>
+
+    <p>SenderosUNA es una aplicación de auto-guía para los Senderos Alexander Skutch de la Universidad Nacional (Costa Rica), sede Pérez Zeledón. Esta política explica qué datos recoge la aplicación, para qué los usa y cómo puedes controlarlos.</p>
+
+    <h2>Puedes usar la aplicación sin cuenta</h2>
+    <p>Explorar senderos, descargarlos y hacer recorridos no requiere registrarte. Si no tienes cuenta, la aplicación crea un identificador anónimo para tu dispositivo, que no contiene tu nombre ni tu correo.</p>
+
+    <h2>Qué datos recogemos y para qué</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dato</th><th>Cuándo</th><th>Para qué</th></tr></thead>
+        <tbody>
+          <tr><td>Ubicación (GPS)</td><td>Solo durante un recorrido que tú inicias. Mientras el recorrido está activo, una notificación permanente lo indica, también con la pantalla bloqueada.</td><td>Registrar el recorrido, avisarte al llegar a un punto de interés y, si das tu consentimiento, generar estadísticas de uso de los senderos.</td></tr>
+          <tr><td>Datos del recorrido (trazado, duración, distancia, puntos de interés visitados)</td><td>Se envían al servidor <strong>solo si aceptas compartir la analítica de tours</strong>. Sin consentimiento, se quedan en tu teléfono.</td><td>Mapas de calor y estadísticas agregadas para la administración de los senderos, tu historial y tus logros.</td></tr>
+          <tr><td>Interacción con el contenido (avisos de llegada abiertos o descartados, cuánto escuchas de cada audio)</td><td>Durante los recorridos, con el mismo consentimiento.</td><td>Saber qué contenido interesa a los visitantes.</td></tr>
+          <tr><td>Plataforma del teléfono (Android o iOS) e identificador anónimo de instalación</td><td>Con cada recorrido enviado.</td><td>Evitar duplicados y separar los datos de cada instalación.</td></tr>
+          <tr><td>Correo, nombre de usuario y contraseña</td><td>Solo si creas una cuenta. La contraseña se guarda cifrada (hash) y nunca es visible.</td><td>Iniciar sesión y sincronizar tus datos entre dispositivos.</td></tr>
+          <tr><td>Foto de perfil</td><td>Solo si eliges una.</td><td>Identificarte junto a tus reseñas.</td></tr>
+          <tr><td>Reseñas y calificaciones</td><td>Solo si las publicas (requiere cuenta).</td><td>Mostrarlas a otros visitantes del sendero.</td></tr>
+          <tr><td>Fotografías de senderos</td><td>Solo si las envías. Si lo eliges, incluyen la ubicación donde se tomaron.</td><td>Publicarlas en la galería del sendero después de que la administración las apruebe.</td></tr>
+          <tr><td>Reportes de incidentes</td><td>Solo si reportas un peligro. La ubicación se adjunta únicamente si lo autorizas.</td><td>Alertar a la administración sobre problemas en el sendero.</td></tr>
+          <tr><td>Favoritos y logros</td><td>Si tienes cuenta.</td><td>Guardar tus senderos preferidos y mostrar tu progreso.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Permisos del teléfono</h2>
+    <ul>
+      <li><strong>Ubicación «mientras se usa la app»:</strong> para los recorridos. La aplicación no solicita acceso a la ubicación en segundo plano permanente; el registro con la pantalla bloqueada funciona mediante un servicio visible que se detiene al terminar el recorrido.</li>
+      <li><strong>Notificaciones:</strong> para indicar que hay un recorrido en curso y avisarte al llegar a un punto de interés.</li>
+      <li><strong>Cámara y fotos:</strong> solo cuando eliges tomar o seleccionar una foto.</li>
+    </ul>
+
+    <h2>Quién ve tus datos</h2>
+    <ul>
+      <li>Las estadísticas que ve la administración no muestran tu nombre, tu correo ni tu identificador.</li>
+      <li>Tus reseñas, tu nombre de usuario, tu foto de perfil y las fotos aprobadas son visibles para otros visitantes.</li>
+      <li>Solo el personal autorizado del proyecto (administradores y analistas) accede al panel de administración.</li>
+      <li>No vendemos tus datos, no los compartimos con anunciantes y la aplicación no contiene publicidad ni rastreadores de terceros.</li>
+      <li>Los datos se guardan en un servidor administrado por [RESPONSABLE].</li>
+    </ul>
+
+    <h2>Cuánto tiempo los conservamos</h2>
+    <ul>
+      <li>Los puntos GPS de cada recorrido se conservan hasta 12 meses y luego se eliminan.</li>
+      <li>Los datos de tu cuenta se conservan mientras la cuenta exista.</li>
+    </ul>
+
+    <h2>Tus opciones</h2>
+    <ul>
+      <li><strong>Dejar de compartir la analítica:</strong> en Ajustes › Privacidad. Los recorridos siguientes no se envían.</li>
+      <li><strong>Eliminar tu cuenta:</strong> en Ajustes › Cuenta › Eliminar cuenta. Se borran tu perfil, tu foto, tus reseñas, tus favoritos, tus logros y tus fotografías. Los recorridos y los reportes de incidentes se conservan sin ningún dato que te identifique, para que las estadísticas de los senderos sigan siendo válidas.</li>
+      <li><strong>Consultas o solicitudes:</strong> escríbenos a [CORREO].</li>
+    </ul>
+
+    <h2>Menores de edad</h2>
+    <p>La aplicación puede usarse sin cuenta. Si eres menor de edad, crea una cuenta solo con el permiso de tu madre, padre o persona encargada.</p>
+
+    <h2>Cambios a esta política</h2>
+    <p>Si esta política cambia, publicaremos la nueva versión en esta misma página con su fecha de vigencia.</p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>SenderosUNA privacy policy</h1>
+    <p class="meta">Effective: [DATE] · Controller: [RESPONSIBLE PARTY] · Contact: [EMAIL]</p>
+
+    <p>SenderosUNA is a self-guided tour app for the Alexander Skutch Trails of Universidad Nacional (Costa Rica), Pérez Zeledón campus. This policy explains what data the app collects, why, and how you can control it.</p>
+
+    <h2>You can use the app without an account</h2>
+    <p>Browsing trails, downloading them and taking tours does not require signing up. Without an account, the app creates an anonymous identifier for your device that contains neither your name nor your email.</p>
+
+    <h2>What we collect and why</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Data</th><th>When</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Location (GPS)</td><td>Only during a tour you start. While the tour is active, a persistent notification says so, including with the screen locked.</td><td>To record the tour, alert you when you reach a point of interest and, if you consent, produce trail usage statistics.</td></tr>
+          <tr><td>Tour data (route, duration, distance, points of interest visited)</td><td>Sent to the server <strong>only if you agree to share tour analytics</strong>. Without consent, it stays on your phone.</td><td>Heat maps and aggregated statistics for trail management, your history and your achievements.</td></tr>
+          <tr><td>Content interaction (arrival notices opened or dismissed, how much of each audio you listen to)</td><td>During tours, under the same consent.</td><td>To learn which content interests visitors.</td></tr>
+          <tr><td>Phone platform (Android or iOS) and anonymous installation identifier</td><td>With each tour sent.</td><td>To avoid duplicates and keep each installation's data apart.</td></tr>
+          <tr><td>Email, username and password</td><td>Only if you create an account. The password is stored hashed and is never visible.</td><td>To sign in and sync your data across devices.</td></tr>
+          <tr><td>Profile photo</td><td>Only if you choose one.</td><td>To identify you next to your reviews.</td></tr>
+          <tr><td>Reviews and ratings</td><td>Only if you post them (account required).</td><td>To show them to other trail visitors.</td></tr>
+          <tr><td>Trail photos</td><td>Only if you send them. If you choose, they include where they were taken.</td><td>To publish them in the trail gallery once the administration approves them.</td></tr>
+          <tr><td>Incident reports</td><td>Only if you report a hazard. Location is attached only if you allow it.</td><td>To alert the administration about trail problems.</td></tr>
+          <tr><td>Favorites and achievements</td><td>If you have an account.</td><td>To keep your favorite trails and show your progress.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Phone permissions</h2>
+    <ul>
+      <li><strong>Location "while using the app":</strong> for tours. The app does not request permanent background location; recording with the screen locked uses a visible service that stops when the tour ends.</li>
+      <li><strong>Notifications:</strong> to show that a tour is in progress and to alert you when you reach a point of interest.</li>
+      <li><strong>Camera and photos:</strong> only when you choose to take or pick a photo.</li>
+    </ul>
+
+    <h2>Who sees your data</h2>
+    <ul>
+      <li>The statistics the administration sees do not show your name, email or identifier.</li>
+      <li>Your reviews, username, profile photo and approved photos are visible to other visitors.</li>
+      <li>Only authorized project staff (administrators and analysts) can access the admin panel.</li>
+      <li>We do not sell your data or share it with advertisers, and the app contains no ads or third-party trackers.</li>
+      <li>Data is stored on a server managed by [RESPONSIBLE PARTY].</li>
+    </ul>
+
+    <h2>How long we keep it</h2>
+    <ul>
+      <li>Each tour's GPS points are kept for up to 12 months and then deleted.</li>
+      <li>Account data is kept while the account exists.</li>
+    </ul>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li><strong>Stop sharing analytics:</strong> in Settings › Privacy. Later tours are not sent.</li>
+      <li><strong>Delete your account:</strong> in Settings › Account › Delete account. Your profile, photo, reviews, favorites, achievements and photos are deleted. Tours and incident reports are kept with nothing that identifies you, so trail statistics remain valid.</li>
+      <li><strong>Questions or requests:</strong> write to [EMAIL].</li>
+    </ul>
+
+    <h2>Minors</h2>
+    <p>The app can be used without an account. If you are a minor, only create an account with permission from a parent or guardian.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will publish the new version on this page with its effective date.</p>
+  </section>
+</main>
+</body>
+</html>
